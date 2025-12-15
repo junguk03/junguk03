@@ -46,3 +46,6 @@ AWS EC2와 Vercel에 실제 서비스를 배포해본 **백엔드 / 서버 개�
 
 ### Security
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633)
+
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=junguk03&layout=compact)
