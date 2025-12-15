@@ -27,3 +27,22 @@ AWS EC2와 Vercel에 실제 서비스를 배포해본 **백엔드 / 서버 개�
 - 의도적으로 취약한 서버 구조를 만들고 공격/방어 실습
 - 인증, 입력 검증, 서버 설정 보안에 관심
 - Burp Suite, 워게임 기반 학습 진행 중
+
+
+
+## 🛠 Tech Stack
+
+### Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+
+### Infra
+![AWS](https://img.shields.io/badge/AWS_EC2-FF9900?logo=amazonaws&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white)
+
+### Language
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+
+### Security
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633)
