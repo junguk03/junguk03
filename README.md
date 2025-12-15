@@ -30,6 +30,15 @@ AWS EC2와 Vercel에 실제 서비스를 배포해본 **백엔드 / 서버 개�
 
 
 
+
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=junguk03&layout=compact)
+
+
+
+
+
+
 ## 🛠 Tech Stack
 
 ### Backend
