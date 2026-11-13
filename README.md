@@ -54,6 +54,32 @@ Dreamhack 워게임과 PortSwigger 랩을 풀며 직접 작성한 Python 익스�
 
 - **WHITEHAT 2026** (2026.11) — 대학생부, 팀 GlassHouse(수원대학교)로 온라인 예선 참가
 
-## 🛠 Tech
+## 🛠 Skills
 
-Burp Suite · Python · Flask · FastAPI · Node.js · Flutter · Docker · Redis · Linux
+### Security
+
+![Python](https://img.shields.io/badge/Python_(Exploit)-3776AB?logo=python&logoColor=white&style=flat-square)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square)
+
+### Development
+
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=flat-square)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white&style=flat-square)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white&style=flat-square)
+
+### Infra
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=flat-square)
+![Redis](https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white&style=flat-square)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat-square)
+
+## 📊 GitHub Stats
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=junguk03&layout=compact&theme=tokyonight)
+
+## 📫 Contact
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-0E7C66?style=flat-square)](https://junguk03.github.io/)
+[![Naver Blog](https://img.shields.io/badge/Naver_Blog-03C75A?logo=naver&logoColor=white&style=flat-square)](https://blog.naver.com/junkuk9503)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=flat-square)](https://github.com/junguk03)
