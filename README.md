@@ -11,7 +11,7 @@
 **PortSwigger Web Security Academy** → 같은 유형 워게임 → n-day 재현 순서로 진행합니다.
 진행 기록: [security_report](https://github.com/junguk03/security_report)
 
-| 주제 | 진행 (2026-11-11) |
+| 주제 | 진행 (2026-11-13) |
 |---|---|
 | SQL injection (Blind 포함) | 3 / 18 |
 | Authentication | 시작 전 |
@@ -20,17 +20,28 @@
 
 ## 🔐 프로젝트
 
-### GlassHouse CTF — 보안 동아리 · 4인 팀 · 팀장 (2026.10 ~)
+### GlassHouse CTF — 보안 동아리 writeup · 4인 팀 · 팀장 (2026.10 ~)
 
 Flask로 원서 접수 서비스를 직접 만들고, 두 조로 나눠 취약점을 심은 문제를 출제한 뒤 서로 바꿔 푸는 화이트박스 CTF.
 
-- 공통 레이아웃·컴포넌트·메인 화면과 깃 관리 담당
-- 문제 8개: IDOR, SQL Injection, 파일 다운로드, Broken Access Control, Mass Assignment, SSTI, Race Condition 등
+- 공통 레이아웃·컴포넌트·메인 화면, 팀 개발 가이드·CTF 규칙·출제 절차 문서, 깃 관리 담당
+- 직접 출제: 02-idor, 03-bac, 04-XSS · 팀 전체 문제 9개 (Easy 4, Medium 5)
+- 출제·풀이 과정을 블로그에 기록 ([소개 글](https://blog.naver.com/junkuk9503/224449794694))
+- 수원대학교 IT 전공역량 강화 그룹활동 지원 프로그램 선발 (2026.10 ~ 12)
 - [Write_Up_GlassHouse](https://github.com/junguk03/Write_Up_GlassHouse)
 
-### 안심 계약 가디언 (GuardUp) — 한이음 드림업 2026 · 5인 팀 · 팀장
+### Claude MCP Agent — 개인 · 진행 중 (2026.11 ~)
 
-자립준비청년을 위한 AI 전세 계약서 분석 앱. OCR → 개인정보 마스킹 → 공공 API → GPT-4o + RAG로 위험 조항과 위험도를 알려줍니다.
+직접 만든 MCP 서버(lab-tools)를 Claude Code 에이전트에 연결해 로컬 OWASP Juice Shop을 정찰하게 하고, 결과를 사람이 직접 검증하는 학습용 실험.
+
+- 서버 코드에서 대상 제한: 127.0.0.1·localhost만 허용, 포트 형식 검사, 리다이렉트 미추적, 본문 4000바이트 제한
+- 모든 도구 호출을 허용·거부·오류로 나눠 감사 로그에 기록
+- 첫 정찰(2026-11-13): Juice Shop 확인, `/ftp` 디렉터리 목록 무인증 노출 관측 · 본문 제한으로 API 경로 찾기는 실패 → 보완 계획 정리
+- [Claude_MCP_Agent](https://github.com/junguk03/Claude_MCP_Agent) · [정찰 보고서](https://github.com/junguk03/Claude_MCP_Agent/blob/main/reports/261113_recon.md)
+
+### 안심 계약 가디언 (GuardUp) — 한이음 드림업 2026 · 5인 팀 · 팀장 (2026.04 ~ 10)
+
+자립준비청년을 위한 AI 전세 계약서 분석 앱. OCR → 개인정보 마스킹 → 공공 API → GPT-4o + RAG로 위험 조항과 위험도를 알려줍니다. Flutter 앱과 FastAPI 서버를 연동해 AWS EC2에 배포했습니다.
 
 - Privacy-First 설계: KLUE-NER + 정규식으로 개인정보 마스킹, 외부 LLM에는 마스킹된 텍스트만 전달, 분석 후 매핑 테이블 즉시 파기
 - 개발보고서·제작설계서·API 명세서 작성
@@ -50,9 +61,22 @@ Dreamhack 워게임과 PortSwigger 랩을 풀며 직접 작성한 Python 익스�
 | Authentication | IP 차단 우회, 에러 메시지·응답 시간 차이로 사용자명 열거 |
 | Crypto | AES-CBC Padding Oracle Attack |
 
+풀이 글: [Secret Data](https://blog.naver.com/junkuk9503/224333268246) · [Tomcat Manager](https://blog.naver.com/junkuk9503/224338403978) · [NoSQL-CouchDB](https://blog.naver.com/junkuk9503/224341863557) · [Padding Oracle](https://blog.naver.com/junkuk9503/224370201618) · [CProxy: Inject](https://blog.naver.com/junkuk9503/224471416620) 외 5편
+
+## 🔎 재현 · 제보 · 기여
+
+- **n-day 재현** (2026.09) — Apache 경로 조작 CVE-2021-41773 재현 ([글](https://blog.naver.com/junkuk9503/224414562448))
+- **오픈소스 기여** (2026.09) — [flaskbb-plugin-conversations PR #1](https://github.com/flaskbb/flaskbb-plugin-conversations/pull/1) 머지 (디버그 코드 정리)
+- **취약점 제보** (2026.10 ~ 11) — HackerOne Neon 프로그램에 보고서 1건 제출, Informative 종료 (세부 내용 비공개)
+
 ## 🏁 활동
 
-- **WHITEHAT 2026** (2026.11) — 대학생부, 팀 GlassHouse(수원대학교)로 온라인 예선 참가
+- **WHITEHAT 2026 예선** (2026.11) — 대학생부, 4인 팀 GlassHouse로 참가. 웹·포렌식 문제 직접 풀이, 팀 900점 · 대학생부 64등 ([풀이 글](https://blog.naver.com/junkuk9503/224470305727))
+- **수원대 IT 그룹활동 지원 프로그램** (2026.10 ~ 12) — GlassHouse 팀 팀장으로 선발
+
+## 📜 자격증
+
+- 정보처리기능사 (한국산업인력공단, 2024.04)
 
 ## 🛠 Skills
 
